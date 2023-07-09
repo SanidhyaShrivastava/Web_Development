@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Lab Assignment-3A
+        </title>
+    </head>
+
+<body style="text-align:center">
+    <h1 style="color:blue">Web Technology Assignment-3</h1>
+    <h2>Java Script Demo Programming</h2>
+
+    Please enter name:<input type="text" id="txt" ></input>
+
+    <button type="button" onclick="myFunction()">Click me</button>
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var x= "Hello.. "+document.getElementById("txt").value+" Welcome to Java Script ";
+            document.getElementById("demo").innerHTML=x;
+        }
+    </script>
+
+</body>
+</html>

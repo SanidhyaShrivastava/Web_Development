@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript String Array Example</title>
+  </head>
+
+  <style>
+    body{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    button {
+        font-size: 20px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #3e8e41;
+    }
+  </style>
+
+
+
+
+
+
+  <body>
+    <h1>Colors Array</h1>
+    <br>
+    <p style="font-size:30px">Current colors array: <span id="colors"></span></p><br>
+    <p>Enter a color to add to the array: <input type="text" id="colorInput"></p><br>
+    <button onclick="addColor()">Add Color</button>
+
+    <script>
+      
+      var colors = ["Red", "Green", "Blue"];
+
+      function addColor() {
+        var colorInput = document.getElementById("colorInput").value;
+        if (colors.indexOf(colorInput) === -1) {
+          colors.push(colorInput);
+          updateColors();
+        }
+      }
+
+      // Update the display of the colors array
+      function updateColors() {
+        var colorsSpan = document.getElementById("colors");
+        colorsSpan.textContent = colors.join(", ");
+      }
+
+      // Initialize the colors display
+      updateColors();
+    </script>
+  </body>
+</html>

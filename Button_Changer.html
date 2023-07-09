@@ -1,0 +1,45 @@
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" onmouseover="over()" onmouseout="out()" >
+</body>
+</html-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Color Change</title>
+  <style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    button {
+      background-color: green;
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    
+  </style>
+</head>
+<body>
+  <button id="myBtn" onmouseover="changeColor('black')" onmouseout="changeColor('green')" onclick="changeColor('blue')">Click me!</button>
+
+  <script>
+    function changeColor(color) {
+      document.getElementById('myBtn').style.backgroundColor = color;
+    }
+  </script>
+</body>
+</html>

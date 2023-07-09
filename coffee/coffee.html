@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Coffee Shop Name</title>
+    <style>
+        
+        header {
+            background-color: rgb(0, 0, 0, 0.4);
+
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+            padding: 5px;
+            backdrop-filter: blur(5px);
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .hero {
+            background-image: url("hero-background.jpg");
+            background-size: cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            color: #fff;
+            text-shadow: 1px 1px #333;
+        }
+
+        .about-us {
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        .menu,
+        .location,
+        .contact-us {
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .table-content {
+            margin-left: 50px;
+            max-width: 320px;
+            color: black;
+            font-size: 20px;
+
+
+        }
+
+        .box,
+        .box1,.location,.contact-us {
+            height: 300px;
+
+            width: 415px;
+
+            top: 25%;
+            margin-left: 25px;
+            padding-left: 30px;
+            padding: 10px;
+            background: rgb(0, 0, 0, 0.4);
+
+            backdrop-filter: blur(10px);
+            border-radius: 5px;
+        }
+
+        nav {
+            display: flex;
+            
+            width: 350px;
+            height: 18px;
+            font-size: 18px;
+            
+        }
+
+        img {
+            height: 50px;
+        }
+
+        .nav {
+            display: block;
+            justify-content: space-around;
+            
+
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .menu1 {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body style="background-image: url('back.jpg'); background-attachment: fixed;">
+    <header>
+        <div class="nav">
+            <div style="height:13px"></div>
+            <nav style="text-align:right">
+                <a href="#menu">Menu</a>
+                <a href="#location">Location</a>
+                <a href="#about-us">About Us</a>
+                <a href="#contact-us">Contact Us</a>
+            </nav>
+            <div></div>
+        </div>
+        <img src="logo.png" alt="Logo">
+    </header>
+
+    
+
+        <div id="menu">
+            <div style="text-align:center; font-size:46px; color:white"><b>MENU</b></div>
+            <div class="menu1">
+                <div class="box">
+
+                    <table class="table-content" border="5"
+                        style="width: 600px; height:300px; color:white;text-align: center;">
+                        <tr>
+
+                            <th>Coffee</th>
+                            <th>Price ($$)</th>
+                        </tr>
+                        <tr>
+
+                            <td>Latte</td>
+                            <td>$ 4.30</td>
+                        </tr>
+                        <tr>
+
+                            <td>Cappuccino</td>
+                            <td>$ 3.10</td>
+                        </tr>
+                        <tr>
+
+                            <td>americano</td>
+                            <td>$ 6.80</td>
+                        </tr>
+                        <tr>
+
+                            <td>Espresso</td>
+                            <td>$ 1.20</td>
+                        </tr>
+                        <tr>
+
+                            <td>Mocha</td>
+                            <td>$ 10.50</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="box1">
+                    <table class="table-content" border="5"
+                        style="width: 600px; height:300px; color:white;text-align:center">
+                        <tr>
+
+                            <th>Food</th>
+                            <th>Price ($$)</th>
+                        </tr>
+                        <tr>
+
+                            <td>Croissant</td>
+                            <td>$ 14.30</td>
+                        </tr>
+                        <tr>
+
+                            <td>Muffin</td>
+                            <td>$ 23.10</td>
+                        </tr>
+                        <tr>
+
+                            <td>Latte Cake</td>
+                            <td>$ 26.80</td>
+                        </tr>
+                        <tr>
+
+                            <td>Pudding</td>
+                            <td>$ 11.20</td>
+                        </tr>
+                        <tr>
+
+                            <td>Cookies</td>
+                            <td>$ 5.50</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="about-us" id="about-us">
+            <div style="color:white; font-size:46px;"><b>ABOUT US</b></div>
+            <p>Our coffee shop was established in 2010, with a mission to serve the finest coffee and pastries in town.
+                We source our beans from local roasters and bake our pastries fresh every day. Whether you're looking for a
+                quick caffeine fix or a cozy place to relax and catch up with friends, we've got you covered.</p>
+            <p>Our mission is to provide a warm and welcoming atmosphere for all, where everyone can feel at home and
+                enjoy
+                a great cup of coffee.</p>
+        </div>
+
+        <div class="menu1">
+        <div class="location" id="location">
+            <div style="color:white; font-size:46px;"><b>LOCATION</b></div>
+            <p>Address: 123 Main Street, Seattle USA</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: bitter.sweet@coffee.com</p>
+            <p>Hours:</p>
+            <ul>
+              <li>Monday-Friday: 7:00 AM - 7:00 PM</li>
+              <li>Saturday-Sunday: 8:00 AM - 6:00 PM</li>
+            </ul>
+        </div>
+          <div class="contact-us" id="contact-us">
+            <div style="color:white; font-size:46px;"><b>CONTACT US</b></div>
+            <form action="" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name">
+              <br><br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email">
+              <br><br>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message"></textarea>
+              <br><br>
+              <input type="submit" value="Submit">
+            </form>
+        </div>
+        </div>
+          <footer>
+            Copyright &copy; BitterSweet @ 2023
+          </footer>
+
+</body>
+
+</html>

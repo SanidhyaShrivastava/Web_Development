@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Calculator</title>
+  </head>
+  <body align="center">
+    <h1> Calculator</h1>
+    <form style="font-size:30px">
+      <input type="text" id="display" disabled><br>
+      <input type="text" id="display2" disabled>
+      <br><br>
+      <input type="button" value="7" onclick="document.getElementById('display').value+='7'">
+      <input type="button" value="8" onclick="document.getElementById('display').value+='8'">
+      <input type="button" value="9" onclick="document.getElementById('display').value+='9'">
+      <input type="button" value="/" onclick="document.getElementById('display').value+='/'">
+      <br>
+      <input type="button" value="4" onclick="document.getElementById('display').value+='4'">
+      <input type="button" value="5" onclick="document.getElementById('display').value+='5'">
+      <input type="button" value="6" onclick="document.getElementById('display').value+='6'">
+      <input type="button" value="*" onclick="document.getElementById('display').value+='*'">
+      <br>
+      <input type="button" value="1" onclick="document.getElementById('display').value+='1'">
+      <input type="button" value="2" onclick="document.getElementById('display').value+='2'">
+      <input type="button" value="3" onclick="document.getElementById('display').value+='3'">
+      <input type="button" value="-" onclick="document.getElementById('display').value+='-'">
+      <br>
+      <input type="button" value="C" onclick="document.getElementById('display').value=''">
+      <input type="button" value="0" onclick="document.getElementById('display').value+='0'">
+      <input type="button" value="=" onclick="document.getElementById('display2').value=eval(document.getElementById('display').value)">
+      <input type="button" value="+" onclick="document.getElementById('display').value+='+'">
+      <br><br>
+
+      <select id="operator" onchange="document.getElementById('display').value+=this.value">
+        <option value="">Select Operator</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+
+    </form>
+  </body>
+</html>

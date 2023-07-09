@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change Heading Color</title>
+</head>
+
+
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+
+    label {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+
+    select {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+
+    input[type="submit"] {
+      font-size: 20px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+
+
+
+<body>
+	<h1 id="heading">Change my color!</h1>
+	<select id="font-color">
+		<option value="">Select font color</option>
+		<option value="red">Red</option>
+		<option value="green">Green</option>
+		<option value="blue">Blue</option>
+	</select>
+	<select id="bg-color">
+		<option value="">Select background color</option>
+		<option value="red">Red</option>
+		<option value="green">Green</option>
+		<option value="blue">Blue</option>
+	</select>
+    <br>
+	<br>
+    <input type="submit" value="Change Colors" onclick="changeColor()">
+	<script>
+		function changeColor() {
+			var heading = document.getElementById("heading");
+			var fontColor = document.getElementById("font-color").value;
+			var bgColor = document.getElementById("bg-color").value;
+			
+			if (fontColor === "" || bgColor === "") {
+				alert("Please select both font color and background color.");
+				return;
+			}
+			
+			if (fontColor === bgColor) {
+				alert("Font color and background color cannot be the same.");
+				return;
+			}
+			
+			heading.style.color = fontColor;
+			heading.style.background = bgColor;
+		}
+	</script>
+</body>
+</html>

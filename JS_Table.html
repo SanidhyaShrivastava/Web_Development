@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add row</title>
+</head>
+<body>
+    <table id="myTable" border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Smith</td>
+            <td>25</td>
+        </tr>
+    </table>
+    <br>
+    
+    <br>
+    <label for="name">Name:</label>
+    <input type="text" id="name">
+    <br>
+    <label for="age">Age:</label>
+    <input type="text" id="age">
+    <br><br>
+    <button onclick="addRow()">Add Row</button>
+    <script>
+        function addRow() {
+            // Get table reference
+            var table = document.getElementById("myTable");
+
+            // Get input values
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+
+            // Create new row and cells
+            var row = table.insertRow(-1);
+            var nameCell = row.insertCell(0);
+            var ageCell = row.insertCell(1);
+
+            // Add values to cells
+            nameCell.innerHTML = name;
+            ageCell.innerHTML = age;
+        }
+    </script>
+</body>
+</html>
